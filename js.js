@@ -14,14 +14,14 @@ if (opcion_jugador == 1){
 else if (opcion_jugador == 3){
     opcion_jugador = "tijera"
 }
-document.write(opcion_jugador + " - ")
-document.write(opcion_maquina  + " - ");
+document.write("Jugador selecciono: " + opcion_jugador + " ------ ")
+document.write("Maquina Selecciono: " + opcion_maquina );
 
 if (opcion_jugador == opcion_maquina){
-    document.write("Es un empate");
+    document.write(" ----- ES UN EMPATE");
 }else if ((opcion_jugador === "piedra" && opcion_maquina === "tijera") || (opcion_jugador === "papel" && opcion_maquina === "piedra") 
 || (opcion_jugador === "tijera" && opcion_maquina === "papel")){
-    document.write("Ganaste");
+    document.write(" ----- GANASTE");
 }else if ((opcion_jugador === "papel" && opcion_maquina === "tijera") || (opcion_jugador === "tijera" && opcion_maquina === "piedra") || (opcion_jugador === "piedra" && opcion_maquina === "papel")){
-    document.write("Perdiste");
+    document.write(" ----- PERDISTE");
 }
