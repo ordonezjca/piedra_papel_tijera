@@ -19,16 +19,9 @@ document.write(opcion_maquina  + " - ");
 
 if (opcion_jugador == opcion_maquina){
     document.write("Es un empate");
-}else if (opcion_jugador === "piedra" && opcion_maquina === "tijera"){
+}else if ((opcion_jugador === "piedra" && opcion_maquina === "tijera") || (opcion_jugador === "papel" && opcion_maquina === "piedra") 
+|| (opcion_jugador === "tijera" && opcion_maquina === "papel")){
     document.write("Ganaste");
-}else if (opcion_jugador === "papel" && opcion_maquina === "piedra"){
-    document.write("ganaste");
-}else if (opcion_jugador === "tijera" && opcion_maquina === "papel"){
-    document.write("Ganaste");
-}else if (opcion_jugador === "papel" && opcion_maquina === "tijera"){
+}else if ((opcion_jugador === "papel" && opcion_maquina === "tijera") || (opcion_jugador === "tijera" && opcion_maquina === "piedra") || (opcion_jugador === "piedra" && opcion_maquina === "papel")){
     document.write("Perdiste");
-}else if (opcion_jugador === "tijera" && opcion_maquina === "piedra"){
-    document.write("perdiste");
-}else if (opcion_jugador === "piedra" && opcion_maquina === "papel"){
-    document.write("perdiste");
 }
