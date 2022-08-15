@@ -5,7 +5,7 @@ function getRandomInt(max) {
   }
 
 var opcion_jugador = prompt("Cual es tu jugada? digita el numero de tu eleccion: 1) piedra  2) papel  3) tijera");
-var opcion_maquina = lista_maquina[getRandomInt(2)];
+var opcion_maquina = lista_maquina[getRandomInt(3)];
 if (opcion_jugador == 1){
     opcion_jugador = "piedra"
 }else if (opcion_jugador == 2){
